@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write --ignore-unknown **"
+    "format": "prettier --write --ignore-unknown **",
+    "server:dev": "cd ./server-mern-blog && npm run dev",
+    "client:dev": "cd ./client-mern-blog && npm start"
   },
   "repository": {
     "type": "git",

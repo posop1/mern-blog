@@ -1,0 +1,25 @@
+{
+  "name": "mern-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write --ignore-unknown **"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/posop1/mern-blog.git"
+  },
+  "keywords": [
+    "MERN"
+  ],
+  "author": "Artur Yakhin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/posop1/mern-blog/issues"
+  },
+  "homepage": "https://github.com/posop1/mern-blog#readme",
+  "devDependencies": {
+    "@posop/prettier-config": "^1.4.2"
+  }
+}

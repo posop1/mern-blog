@@ -1,14 +1,15 @@
 import { Router } from 'express'
 import {
-    createPost,
-    getAll,
-    getById,
-    getMyPosts,
-    removePost,
-    updatePost,
-    getPostComments,
+  createPost,
+  getAll,
+  getById,
+  getMyPosts,
+  getPostComments,
+  removePost,
+  updatePost
 } from '../controllers/posts.js'
 import { checkAuth } from '../utils/checkAuth.js'
+
 const router = new Router()
 
 // Create Post

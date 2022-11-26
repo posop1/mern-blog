@@ -1,0 +1,51 @@
+.navbar {
+  width: 100%;
+  background: #080808;
+  padding: 15px 0;
+}
+.inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+}
+.nav {
+  display: flex;
+  gap: 90px;
+  color: #5c5c5c;
+}
+.link {
+  list-style: none;
+  font-size: 18px;
+  transition: 0.1s ease-in-out;
+
+  &:hover {
+    color: white;
+  }
+}
+li {
+  list-style-type: none;
+}
+.auth__btn {
+  font-family: 'Roboto', sans-serif;
+  background: #eaeaea;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: 0.1s ease-in-out;
+
+  &:hover {
+    background: #080808;
+    color: #eaeaea;
+  }
+}

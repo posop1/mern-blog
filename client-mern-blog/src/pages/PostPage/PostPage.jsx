@@ -7,10 +7,10 @@ import Moment from 'react-moment'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import { CommentItem } from '../components/CommentItem'
-import { createComment, getPostComments } from '../redux/features/comment/commentSlice'
-import { removePost } from '../redux/features/post/postSlice'
-import axios from '../utils/axios'
+import { CommentItem } from '../../components/CommentItem'
+import { createComment, getPostComments } from '../../redux/features/comment/commentSlice'
+import { removePost } from '../../redux/features/post/postSlice'
+import axios from '../../utils/axios'
 
 export const PostPage = () => {
   const [post, setPost] = useState(null)

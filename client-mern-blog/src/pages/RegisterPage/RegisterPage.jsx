@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import { checkIsAuth, registerUser } from '../redux/features/auth/authSlice'
+import { checkIsAuth, registerUser } from '../../redux/features/auth/authSlice'
 
 export const RegisterPage = () => {
   const [username, setUsername] = useState('')

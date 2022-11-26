@@ -1,9 +1,10 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { PopularPosts } from '../components/PopularPosts'
-import { PostItem } from '../components/PostItem'
-import { getAllPosts } from '../redux/features/post/postSlice'
+import { PopularPosts } from '../../components/PopularPosts'
+import { PostItem } from '../../components/PostItem'
+import { getAllPosts } from '../../redux/features/post/postSlice'
+import s from './MainPage.module.scss'
 
 export const MainPage = () => {
   const dispatch = useDispatch()
@@ -20,7 +21,7 @@ export const MainPage = () => {
   }
 
   return (
-    <div className="max-w-[900px] mx-auto py-10">
+    <div className={s.MainPage}>
       <div className="flex justify-between gap-8">
         <div className="flex flex-col gap-10 basis-4/5">
           {posts?.map((post, idx) => (

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/app.scss'
-import { Navbar } from './Navbar/Navbar'
+import { Navbar } from './Navbar/'
 
 export const Layout = ({ children }) => {
   return (

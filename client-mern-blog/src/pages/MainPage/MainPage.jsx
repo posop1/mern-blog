@@ -37,7 +37,7 @@ export const MainPage = () => {
             ))}
           </div>
           <div className={s.popular__list}>
-            <p className={s.popular__tet}>Популярное:</p>
+            <p className={s.popular__text}>Популярное:</p>
 
             {popularPosts?.map((post, idx) => (
               <PopularPosts

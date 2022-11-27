@@ -8,3 +8,11 @@
   flex-direction: column;
   width: 100%;
 }
+.popular__list {
+  display: flex;
+  flex-direction: column;
+}
+.popular__text {
+  font-size: 18px;
+  font-weight: 700;
+}

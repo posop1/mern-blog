@@ -1,0 +1,56 @@
+.PostItem {
+  width: 90%;
+  background: #080808;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  min-height: 130px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #eaeaea;
+}
+//color: #eaeaea;
+.inner {
+  display: flex;
+  flex-direction: column;
+}
+.info__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+
+  p {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-right: 20px;
+  }
+}
+.main__info {
+  h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 20px;
+    max-width: 700px;
+  }
+}
+.views__comments__container {
+  margin-top: 25px;
+  display: flex;
+  opacity: 0.8;
+
+  .views__comments {
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+
+    span {
+      margin-left: 5px;
+    }
+  }
+}

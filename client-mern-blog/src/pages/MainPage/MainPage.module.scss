@@ -1,0 +1,10 @@
+.inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.post__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

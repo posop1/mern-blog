@@ -23,7 +23,7 @@ export const Navbar = () => {
     <div className={s.navbar}>
       <div className="container">
         <div className={s.inner}>
-          <span className={s.logo}>БЛОГ.РФ</span>
+          <span className={s.logo}>БЛОГ</span>
 
           {isAuth && (
             <ul className={s.nav}>

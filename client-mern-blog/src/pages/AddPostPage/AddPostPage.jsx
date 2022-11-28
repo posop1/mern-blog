@@ -52,7 +52,7 @@ export const AddPostPage = () => {
             onChange={(e) => setText(e.target.value)}
             value={text}
             placeholder="Текст поста..."
-            className={s.input}
+            className={s.input__area}
           />
         </label>
 

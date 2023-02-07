@@ -6,7 +6,9 @@
   "scripts": {
     "format": "prettier --write --ignore-unknown **",
     "server:dev": "cd ./server-mern-blog && npm run dev",
-    "client:dev": "cd ./client-mern-blog && npm start"
+    "client:dev": "cd ./client-mern-blog && npm start",
+    "client": "cd ./client-mern-blog && npm start",
+    "server": "cd ./server-mern-blog && npm start"
   },
   "repository": {
     "type": "git",

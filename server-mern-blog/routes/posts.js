@@ -38,6 +38,6 @@ router.delete('/:id', checkAuth, removePost)
 
 // Get Post Comments
 // http://localhost:3002/api/posts/comments/:id
-router.get('/comments/:id', getPostComments)
+router.get('/:id/comments', getPostComments)
 
 export default router

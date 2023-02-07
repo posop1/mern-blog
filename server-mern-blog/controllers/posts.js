@@ -52,13 +52,13 @@ export const createPost = async (req, res) => {
 export const getAll = async (req, res) => {
   try {
     const posts = await Post.find().sort('-createdAt')
-    const popularPosts = await Post.find().limit(5).sort('-views')
+    // const popularPosts = await Post.find().limit(5).sort('-views')
 
     if (!posts) {
       return res.json({ message: 'Постов нет' })
     }
 
-    res.json({ posts, popularPosts })
+    res.json({ posts })
   } catch (error) {
     res.json({ message: 'Что-то пошло не так.' })
   }
@@ -72,7 +72,7 @@ export const getById = async (req, res) => {
     })
     res.json(post)
   } catch (error) {
-    res.json({ message: 'Что-то пошло не так.' })
+    res.status(404).json({ message: 'Что-то пошло не так.' })
   }
 }
 
@@ -88,7 +88,7 @@ export const getMyPosts = async (req, res) => {
 
     res.json(list)
   } catch (error) {
-    res.json({ message: 'Что-то пошло не так.' })
+    res.status(404).json({ message: 'Что-то пошло не так.' })
   }
 }
 
@@ -104,7 +104,7 @@ export const removePost = async (req, res) => {
 
     res.json({ message: 'Пост был удален.' })
   } catch (error) {
-    res.json({ message: 'Что-то пошло не так.' })
+    res.status(404).json({ message: 'Что-то пошло не так.' })
   }
 }
 
@@ -128,7 +128,7 @@ export const updatePost = async (req, res) => {
 
     res.json(post)
   } catch (error) {
-    res.json({ message: 'Что-то пошло не так.' })
+    res.status(404).json({ message: 'Что-то пошло не так.' })
   }
 }
 
@@ -143,6 +143,6 @@ export const getPostComments = async (req, res) => {
     )
     res.json(list)
   } catch (error) {
-    res.json({ message: 'Что-то пошло не так.' })
+    res.status(404).json({ message: 'Что-то пошло не так.' })
   }
 }
